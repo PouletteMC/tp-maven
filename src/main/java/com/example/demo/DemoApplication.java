@@ -8,16 +8,16 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @RestController
 public class DemoApplication {
-    
+
     public static void main(String[] args) {
         SpringApplication.run(DemoApplication.class, args);
     }
-    
+
     @GetMapping("/")
     public String home() {
         return "Hello, World! Your Spring Boot application is running successfully!";
     }
-    
+
     @GetMapping("/hello")
     public String hello() {
         return "Hello from Spring Boot!";
